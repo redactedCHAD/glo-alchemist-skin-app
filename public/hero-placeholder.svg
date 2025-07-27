@@ -1,0 +1,44 @@
+<svg width="600" height="450" viewBox="0 0 600 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff7ed;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffedd5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fed7aa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="450" rx="24" fill="url(#heroGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="150" cy="100" r="60" fill="#f97316" opacity="0.1"/>
+  <circle cx="450" cy="350" r="80" fill="#ea580c" opacity="0.1"/>
+  <circle cx="500" cy="120" r="40" fill="#fb923c" opacity="0.15"/>
+  
+  <!-- Central illustration -->
+  <g transform="translate(200, 150)">
+    <!-- Face outline -->
+    <ellipse cx="100" cy="80" rx="60" ry="70" fill="white" stroke="url(#accentGradient)" stroke-width="3" opacity="0.8"/>
+    
+    <!-- Skincare elements -->
+    <circle cx="70" cy="60" r="8" fill="#f97316" opacity="0.6"/>
+    <circle cx="130" cy="60" r="8" fill="#ea580c" opacity="0.6"/>
+    <path d="M80 100 Q100 110 120 100" stroke="url(#accentGradient)" stroke-width="2" fill="none"/>
+    
+    <!-- Decorative sparkles -->
+    <g fill="url(#accentGradient)" opacity="0.7">
+      <polygon points="50,40 52,45 57,45 53,48 55,53 50,50 45,53 47,48 43,45 48,45" />
+      <polygon points="150,50 152,55 157,55 153,58 155,63 150,60 145,63 147,58 143,55 148,55" />
+      <polygon points="60,120 62,125 67,125 63,128 65,133 60,130 55,133 57,128 53,125 58,125" />
+      <polygon points="140,110 142,115 147,115 143,118 145,123 140,120 135,123 137,118 133,115 138,115" />
+    </g>
+  </g>
+  
+  <!-- Text overlay -->
+  <text x="300" y="400" font-family="Inter, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="url(#accentGradient)">Beautiful Skin Awaits</text>
+  <text x="300" y="425" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" fill="#6b7280">Professional Skincare Analysis</text>
+</svg>

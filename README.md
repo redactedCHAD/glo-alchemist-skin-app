@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GloAlchemist Skin Analysis App
+
+A responsive web application built with Next.js and TypeScript that provides personalized skincare treatment recommendations based on user questionnaire responses.
+
+## Features
+
+- **Interactive Questionnaire**: Collects user information including skin type, primary concerns, and personal details
+- **Personalized Recommendations**: Provides tailored treatment suggestions based on user responses
+- **Lead Generation**: Captures email addresses for follow-up marketing
+- **Responsive Design**: Optimized for mobile, tablet, and desktop devices
+- **Accessibility Compliant**: WCAG 2.1 AA compliant with proper ARIA labels and keyboard navigation
+- **SEO Optimized**: Includes meta tags, structured data, and performance optimizations
+
+## Technology Stack
+
+- **Framework**: Next.js 15.4.4 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Testing**: Jest with React Testing Library
+- **Deployment**: Optimized for Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd glo-alchemist-skin-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run test` - Run tests
+- `npm run test:watch` - Run tests in watch mode
+- `npm run test:coverage` - Run tests with coverage report
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx         # Root layout with SEO meta tags
+│   ├── page.tsx           # Main application page
+│   ├── globals.css        # Global styles
+│   └── __tests__/         # Page component tests
+├── components/            # Reusable components
+│   ├── ui/               # UI components
+│   └── PerformanceOptimizer.tsx
+├── data/                 # Data layer
+│   ├── recommendations.ts # Treatment recommendations
+│   └── __tests__/        # Data layer tests
+└── types/                # TypeScript type definitions
+    └── index.ts
+```
 
-## Deploy on Vercel
+## Key Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Form Validation
+- Client-side validation for required fields
+- Email format validation
+- Real-time error clearing
+- Accessible error messages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Recommendation Engine
+- Static recommendation matching based on user concerns
+- Four treatment categories: Acne, Anti-Aging, Texture, Hair Removal
+- Educational content for each recommendation
+
+### Accessibility Features
+- Semantic HTML structure
+- ARIA labels and roles
+- Keyboard navigation support
+- Screen reader compatibility
+- Skip to main content link
+
+### Performance Optimizations
+- Static generation ready
+- Preloading of critical resources
+- Optimized CSS with Tailwind
+- Lazy loading where appropriate
+
+## Testing
+
+The application includes comprehensive tests covering:
+- Form validation logic
+- Recommendation matching
+- User interaction flows
+- Accessibility compliance
+- Error handling
+
+Run tests with:
+```bash
+npm test
+```
+
+## Deployment
+
+The application is optimized for deployment on Vercel:
+
+1. Connect your repository to Vercel
+2. Configure environment variables if needed
+3. Deploy automatically on push to main branch
+
+## SEO Features
+
+- Optimized meta tags and descriptions
+- Structured data (JSON-LD) markup
+- Open Graph and Twitter Card support
+- Canonical URLs
+- Performance optimizations for Core Web Vitals
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for new functionality
+5. Ensure all tests pass
+6. Submit a pull request
+
+## License
+
+This project is proprietary to GloAlchemist.
