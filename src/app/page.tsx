@@ -287,7 +287,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto">
               <div className="card-hover bg-white/80 backdrop-blur-sm p-8 sm:p-10 rounded-3xl shadow-xl border border-orange-100">
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl font-bold gradient-text mb-3">Let's Analyze Your Skin</h2>
+                  <h2 className="text-3xl font-bold gradient-text mb-3">Let&apos;s Analyze Your Skin</h2>
                   <p className="text-gray-600 text-lg">Tell us about your skin so we can provide the best recommendations</p>
                 </div>
                 

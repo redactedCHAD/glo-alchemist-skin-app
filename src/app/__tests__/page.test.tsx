@@ -1,11 +1,11 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Home from '../page';
 
 // Mock the recommendations module
 jest.mock('@/data/recommendations', () => ({
   getRecommendation: jest.fn((concern: string) => {
-    const mockRecommendations: { [key: string]: any } = {
+    const mockRecommendations: { [key: string]: { title: string; desc: string } } = {
       acne: {
         title: 'Acne Healing Facials',
         desc: 'Mock acne treatment description'
